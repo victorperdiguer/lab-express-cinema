@@ -80,3 +80,9 @@ const movies = [
       showtimes: ["13:00", "15:30", "18:00", "20:10", "22:40"]
     }
   ];
+
+const { Mongoose } = require('mongoose');
+
+const { response } = require('../app');
+const Movie = require('../models/Movie.model');
+Movie.create(movies);
