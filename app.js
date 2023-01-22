@@ -12,6 +12,7 @@ const express = require('express');
 // Handles the handlebars
 // https://www.npmjs.com/package/hbs
 const hbs = require('hbs');
+hbs.registerPartials(__dirname + '/views/partials');
 
 const app = express();
 
@@ -26,7 +27,9 @@ app.locals.title = `${capitalized(projectName)}- Generated with Ironlauncher`;
 
 // 👇 Start handling routes here
 const index = require('./routes/index');
+const movies = require('./routes/movies.js');
 app.use('/', index);
+app.use('/movies', movies);
 
 // ❗ To handle errors. Routes that don't exist or errors that you handle in specific routes
 require('./error-handling')(app);
