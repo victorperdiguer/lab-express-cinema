@@ -167,6 +167,7 @@ a {
   color: aliceblue;
   font-size: 6rem;
 }
+
 #landing-page a {
   width: 40%;
   height: 60px;
@@ -177,5 +178,20 @@ a {
   text-decoration: none;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+#movies-page {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 5vw;
+}
+
+.movie-card {
+  width: 150px;
+  margin: 20px 130px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }

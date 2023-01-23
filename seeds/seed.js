@@ -84,5 +84,5 @@ const movies = [
 const { Mongoose } = require('mongoose');
 
 const { response } = require('../app');
-const Movie = require('../models/Movie.model');
+const Movie = require('../models/Movies.js');
 Movie.create(movies);

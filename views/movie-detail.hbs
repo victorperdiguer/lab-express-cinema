@@ -1,0 +1,10 @@
+{{> moviePartial this}}
+<h2>Description</h2>
+<p>{{description}}</p>
+<h2>Showtimes</h2>
+<ul>
+    {{#each showtimes}}
+    <li>{{this}}</li>
+    {{/each}}
+</ul>
+
