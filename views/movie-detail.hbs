@@ -1,10 +1,15 @@
-{{> moviePartial this}}
-<h2>Description</h2>
-<p>{{description}}</p>
-<h2>Showtimes</h2>
-<ul>
-    {{#each showtimes}}
-    <li>{{this}}</li>
-    {{/each}}
-</ul>
-
+<div id="movie-detail">
+    <div class="movie-card">
+        <img src="{{image}}" alt={{title}}>
+        <h1>{{title}}</h2>
+        <a href="/movies">Back to the list</a>
+    </div>
+    <h2>Description</h2>
+    <p>{{description}}</p>
+    <h2>Showtimes</h2>
+    <ul>
+        {{#each showtimes}}
+        <li>{{this}}</li>
+        {{/each}}
+    </ul>
+</div>

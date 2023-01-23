@@ -3,6 +3,8 @@
    License: none (public domain)
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 html,
 body,
 div,
@@ -137,8 +139,10 @@ table {
 /* Styling starts here */
 
 body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  height: 100vh;
+  font: 16px "Roboto", sans-serif;
+  font-weight:400;
+  background-color:aliceblue;
+  height:100vh;
 }
 
 a {
@@ -181,17 +185,73 @@ a {
   align-items: center;
 }
 
+#movies-header {
+  text-align:center;
+  font-size: 3rem;
+  font-weight:700;
+  padding-top: 4vh;
+  padding-bottom: 8vh;
+}
+
+#movies-header a {
+  color:rgb(2, 2, 57);
+  text-decoration:none;
+}
+
 #movies-page {
+  margin: 0 10vw;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  gap: 5vw;
+  padding-bottom: 40px;
 }
 
 .movie-card {
-  width: 150px;
-  margin: 20px 130px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 20px 15px;
+}
+
+.movie-card h1 {
+  font-size:1rem;
+  font-weight:700;
+  color:black;
+  margin: 5px 0;
+}
+
+.movie-card a {
+  font-size:0.8rem;
+}
+
+#movie-detail {
+  width:70%;
+  margin: 4vh auto;
+}
+
+#movie-detail h2 {
+  font-size:0.9rem;
+  font-weight:700;
+  color:black;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+#movie-detail p, #movie-detail li {
+  font-size: 0.8rem;
+  display: inline;
+}
+
+footer {
+  background-color: black;
+  padding: 1vh 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  opacity: 60%;
+}
+
+footer h3 {
+  color: white;
+  text-align:center;
 }
